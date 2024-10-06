@@ -68,6 +68,57 @@ The Collatz Conjecture suggests that this process will always eventually reach 1
 
 
 
+# Poker Hand Comparison Program in C
+
+This project contains a C program that compares two poker hands and determines which hand wins or if there is a tie. The program allows users to input two poker hands, each consisting of 5 cards, and evaluates the rank of each hand to declare the winner.
+
+## Features
+
+- **Hand Evaluation**: The program can evaluate common poker hand rankings, such as flush, straight, full house, four of a kind, etc.
+- **Comparison**: It compares two poker hands and declares the winner based on hand strength.
+- **Random Hand Testing**: The program also supports generating and comparing random poker hands for testing purposes.
+
+## Program Description
+
+### Functions
+
+1. **suit(char \*card)**:
+   - Extracts and returns the suit of a card (e.g., 'C' for clubs, 'H' for hearts).
+
+2. **value(char \*card)**:
+   - Returns the numerical value of a card. It treats face cards ('J', 'Q', 'K', 'A') as 11, 12, 13, and 14, respectively.
+
+3. **is_flush(char cards[][3])**:
+   - Checks if all cards in a hand share the same suit, indicating a flush.
+
+4. **hand_dist(char cards[][3], int \*initial)**:
+   - Determines the distribution of card values in a hand and stores them in an array.
+
+5. **highestone(char cards[][3])**:
+   - Checks if the hand contains a straight and returns the highest card in the straight.
+
+6. **card_count(char cards[][3], int num, int direct)**:
+   - Counts how many cards of a given value are present in the hand, useful for detecting pairs, three-of-a-kind, etc.
+
+7. **hand_rank(char cards[][3])**:
+   - Assigns a rank to the hand based on poker rules. The ranks range from 0 (no pair) to 8 (straight flush).
+
+8. **check_strings(char hand1[][3], char hand2[][3])**:
+   - Compares two poker hands by their rank and returns -1, 0, or 1 depending on whether the first hand is weaker, tied, or stronger than the second.
+
+9. **pooker(char hand1[][3], char hand2[][3])**:
+   - Determines the winner between two hands and prints the result ("Player 1 wins", "Player 2 wins", or "It's a tie").
+
+10. **test_random_hands(int n)**:
+    - Generates random poker hands for testing purposes and compares them.
+
+### How the Program Works
+
+1. The user is prompted to input two poker hands. Each hand consists of 5 cards.
+2. The program evaluates the rank of each hand using the function `hand_rank()`.
+3. It compares the two hands and declares which player wins or if it’s a tie.
+4. Optional functionality: The program can also generate random poker hands for testing purposes.
+
 
 
 
