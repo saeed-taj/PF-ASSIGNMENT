@@ -24,3 +24,52 @@ The program implements four functions to calculate the largest product in differ
 - Finally, it prints the direction where the largest product is found along with the product value.
 
 
+
+
+
+
+
+
+
+
+# Collatz Sequence - Longest Sequence Finder in C++
+
+This repository contains a C++ program that calculates the Collatz sequence for numbers and determines the number under a given limit that generates the longest sequence. The program demonstrates the implementation of loops, conditionals, and function calls in C++.
+
+## What is the Collatz Conjecture?
+
+The **Collatz Conjecture** is a sequence defined as follows:
+- Start with any positive integer.
+- If the number is even, divide it by 2.
+- If the number is odd, multiply it by 3 and add 1.
+- Repeat this process until the number reaches 1.
+
+The Collatz Conjecture suggests that this process will always eventually reach 1, regardless of the starting number.
+
+## Program Description
+
+### Functions
+
+1. **conjecture(int start_num)**: 
+   - This function calculates the length of the Collatz sequence for a given starting number.
+   - It returns the total number of steps (including the starting number) needed for the sequence to reach 1.
+
+2. **largest_seq(int limit, int \*start_num, int \*run)**:
+   - This function finds the number below the given limit that produces the longest Collatz sequence.
+   - It updates the starting number and the length of the largest sequence through pointer arguments.
+
+### How the Program Works
+
+- The user is prompted to input an upper limit (the maximum number to consider).
+- The program calculates the Collatz sequence for each number starting from 2 up to the limit.
+- It then prints the number that produces the longest Collatz sequence and the length of that sequence.
+
+
+
+
+
+
+
+
+
+
